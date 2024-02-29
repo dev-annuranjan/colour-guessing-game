@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    font-family: "math", "sans-serif", "Serif";
+}
+
+body {
+    margin: 0;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+#root {
+    background-color: #4d8686;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 12px 32px #305555;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+#game-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding: 24px 30px;
+    top: 0;
+}
+
+#game-nav span {
+    font-size: 28px;
+    color: white;
+}
+
+#game-nav button, .modal-btns button {
+    color: white;
+    background-color: #4d8686;
+    border: 3px solid white;
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 16px;
+}
+
+#color-box {
+    outline: none;
+    height: 200px;
+    width: 200px;
+    border: 5px solid white;
+    border-radius: 16px;
+}
+
+.resettingColorBox {
+    animation: tilt-shaking 0.2s 1;
+}
+
+@keyframes tilt-shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#btn-box {
+    width: 440px;
+    height: 200px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#btn-box button {
+    width: 148px;
+    height: 60px;
+    padding: 16px;
+    font-size: 24px;
+    color: white;
+    background-color: #3e7979;
+    border: 3px solid white;
+    border-radius: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*display: none;*/
+}
+
+.modalBox {
+    width: 400px;
+    height: fit-content;
+    background-color: #4d8686;
+    margin: auto;
+    position: relative;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 36px;
+    min-height: 15rem;
+}
+
+.modal-text {
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.modal-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.modal-btns button {
+
+}
