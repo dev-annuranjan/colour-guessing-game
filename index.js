@@ -207,7 +207,6 @@ function handleOptionClick(event) {
     if (event.target.tagName === "BUTTON") {
         const overlay = document.getElementById('overlay');
         overlay.style.display = 'block';
-
         const resultTextEl = document.getElementById('modal-title');
         const scoreValueEls = document.getElementsByClassName("modal-score-value");
         const scoreEl = scoreValueEls[0];
